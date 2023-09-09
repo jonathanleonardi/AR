@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2021-05-14T09:41:15Z</created><keywords></keywords><modified>2021-05-14T09:41:15Z</modified><revision></revision><subject></subject><title></title><unit meter="1.000000" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_materials>
+    <material id="material" name="material">
+      <instance_effect url="#material-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="material-fx" name="material">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.541176  0.658824 0.290196 1.000000</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.200000  0.200000 0.200000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">0.000000</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color sid="transparent">1.000000  1.000000 1.000000 1.000000</color>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="group_0-lib" name="group_0Mesh">
+      <mesh>
+        <source id="group_0-POSITION">
+          <float_array id="group_0-POSITION-array" count="54">
+51.181099 0.000000 118.110199
+25.450121 39.622231 118.110199
+0.000000 0.000000 118.110199
+25.450121 39.622231 118.110199
+0.000000 0.000000 0.000000
+0.000000 0.000000 118.110199
+25.450121 39.622231 0.000000
+51.181099 0.000000 118.110199
+0.000000 0.000000 0.000000
+51.181099 0.000000 0.000000
+0.000000 0.000000 118.110199
+25.450121 39.622231 0.000000
+51.181099 0.000000 118.110199
+51.181099 0.000000 0.000000
+25.450121 39.622231 118.110199
+51.181099 0.000000 0.000000
+0.000000 0.000000 0.000000
+25.450121 39.622231 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#group_0-POSITION-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="group_0-Normal0">
+          <float_array id="group_0-Normal0-array" count="54">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+-0.841384 0.540437 0.000000
+-0.841384 0.540437 0.000000
+-0.841384 0.540437 0.000000
+-0.841384 0.540437 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.838671 0.544639 0.000000
+0.838671 0.544639 0.000000
+0.838671 0.544639 0.000000
+0.838671 0.544639 0.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#group_0-Normal0-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="group_0-VERTEX">
+          <input semantic="POSITION" source="#group_0-POSITION"/>
+        </vertices>
+        <polylist count="8" material="material"><input semantic="VERTEX" offset="0" source="#group_0-VERTEX"/><input semantic="NORMAL" offset="1" source="#group_0-Normal0"/><vcount>3 3 3 3 3 3 3 3 </vcount><p> 0 0 1 1 2 2 3 3 4 4 5 5 4 4 3 3 6 6 7 7 8 8 9 9 8 8 7 7 10 10 11 11 12 12 13 13 12 12 11 11 14 14 15 15 16 16 17 17</p></polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="V-Ray-Omni2-light" name="V-Ray-Omni2-light">
+      <technique_common>
+        <point>
+          <color sid="color">1.000000 1.000000 1.000000</color>
+        </point>
+      </technique_common>
+      <technique profile="MAYA">
+        <intensity sid="intensity">1.000000</intensity>
+      </technique>
+    </light>
+    <light id="V-Ray-Omni1-light" name="V-Ray-Omni1-light">
+      <technique_common>
+        <point>
+          <color sid="color">1.000000 1.000000 1.000000</color>
+        </point>
+      </technique_common>
+      <technique profile="MAYA">
+        <intensity sid="intensity">1.000000</intensity>
+      </technique>
+    </light>
+    <light id="V-Ray-Omni-light" name="V-Ray-Omni-light">
+      <technique_common>
+        <point>
+          <color sid="color">1.000000 1.000000 1.000000</color>
+        </point>
+      </technique_common>
+      <technique profile="MAYA">
+        <intensity sid="intensity">1.000000</intensity>
+      </technique>
+    </light>
+  </library_lights>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera-camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <yfov sid="yfov">45.000000</yfov>
+            <aspect_ratio>1.333333</aspect_ratio>
+            <znear sid="znear">0.100000</znear>
+            <zfar sid="zfar">50000.000000</zfar>
+          </perspective>
+        </technique_common>
+        <technique profile="FCOLLADA"><vertical_aperture>1.554470</vertical_aperture><horizontal_aperture>2.072630</horizontal_aperture><lens_squeeze>1.000000</lens_squeeze></technique>
+      </optics>
+    </camera>
+  </library_cameras>
+  <library_visual_scenes>
+    <visual_scene id="prism" name="prism">
+      <node name="V-Ray-Omni2" id="V-Ray-Omni2" sid="V-Ray-Omni2"><matrix sid="matrix">1.000000 0.000000 0.000000 48.221199 0.000000 0.000000 -1.000000 12.407800 0.000000 1.000000 0.000000 24.219000 0.000000 0.000000 0.000000 1.000000</matrix><instance_light url="#V-Ray-Omni2-light"/><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <node name="prism1" id="prism1" sid="prism1"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="SketchUp" id="SketchUp" sid="SketchUp"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="group_0" id="group_0" sid="group_0"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#group_0-lib"><bind_material><technique_common><instance_material symbol="material" target="#material"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node><node name="Last-Saved-SketchUp-View" id="Last-Saved-SketchUp-View" sid="Last-Saved-SketchUp-View"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node></node></node>
+      <node name="Camera" id="Camera" sid="Camera"><matrix sid="matrix">0.948324 -0.270545 -0.165791 -8.855086 -0.000000 0.522500 -0.852639 -118.095062 0.317303 0.808578 0.495500 83.125610 0.000000 0.000000 0.000000 1.000000</matrix><instance_camera url="#Camera-camera"/><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <node name="V-Ray-Omni1" id="V-Ray-Omni1" sid="V-Ray-Omni1"><matrix sid="matrix">1.000000 0.000000 0.000000 48.221199 0.000000 0.000000 -1.000000 12.407800 0.000000 1.000000 0.000000 -74.973396 0.000000 0.000000 0.000000 1.000000</matrix><instance_light url="#V-Ray-Omni1-light"/><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <node name="V-Ray-Omni" id="V-Ray-Omni" sid="V-Ray-Omni"><matrix sid="matrix">1.000000 0.000000 0.000000 -34.968201 0.000000 0.000000 -1.000000 8.300300 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_light url="#V-Ray-Omni-light"/><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node>
+      <extra><technique profile="MAX3D"><frame_rate>29.970030</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>6.673333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#prism"></instance_visual_scene>
+  </scene>
+</COLLADA>
